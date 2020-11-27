@@ -18,6 +18,7 @@
 /* ========== GENERAL STYLES ========== */
 body {
   font-family: var(--main-font);
+  /* width: 1600px; */
 }
 a {
   text-decoration: none;
@@ -25,10 +26,29 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 address {
   font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
 }
 
 .section-title {
@@ -40,13 +60,53 @@ address {
   color: var(--title-color);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /* ========== HEADER ========== */
+.header .logo {
+  margin-right: 93px;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-list {
+  margin-left: auto;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.contact-list {
+  display: flex;
+}
 
 .header .current {
   color: var(--accent-color);
 }
 
 .logo {
+  margin-right: ;
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
@@ -86,7 +146,12 @@ address {
 }
 
 /* ========== HERO ========== */
+
 .hero-title {
+  /* padding-left: 452px;
+  padding-right: 452px;
+  padding-bottom: 30px; */
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -94,6 +159,14 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   /* color: var(--hero-title-color); */
+}
+
+.hero .hero-button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
 }
 
 .hero-button {
